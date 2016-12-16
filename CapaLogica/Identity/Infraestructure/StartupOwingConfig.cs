@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaLogica.Identity.Infraestructure
+namespace CapaLogica.Accounts.Infraestructure
 {
     public class StartupOwingConfig
     {
