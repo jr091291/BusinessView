@@ -1,25 +1,23 @@
 ﻿using CapaLogica.Accounts.Infraestructure;
+using CapaLogica.Identity.Infraestructure;
 using Entidades.Response;
 using Microsoft.AspNet.Identity;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.Http.ModelBinding;
 
 namespace CapaLogica.Identity
 {
     public class BaseBLL
     {
         protected ApplicationUserManager UserManager;
+        protected ApplicationRoleManager RoleManager;
         protected HttpRequestMessage request;
 
         public BaseBLL(HttpRequestMessage request)
         {
             this.request = request;
             UserManager = ApplicationUserManager.getInstance(request);
+            RoleManager = ApplicationRoleManager.getInstance(request);
         }
 
         public List<ErrorMessage> VerifiedErrors(IdentityResult result) {

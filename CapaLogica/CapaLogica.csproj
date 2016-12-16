@@ -117,10 +117,12 @@
   <ItemGroup>
     <Compile Include="Identity\AccountsBLL.cs" />
     <Compile Include="Identity\BaseBLL.cs" />
+    <Compile Include="Identity\Infraestructure\ApplicationRoleManager.cs" />
     <Compile Include="Identity\Infraestructure\ApplicationUserManager.cs" />
     <Compile Include="Identity\Infraestructure\StartupOwingConfig.cs" />
     <Compile Include="Identity\Providers\CustomJwtFormat.cs" />
     <Compile Include="Identity\Providers\CustomOautProvider.cs" />
+    <Compile Include="Identity\RoleBLL.cs" />
     <Compile Include="Identity\Validators\MyCustomPasswordValidator.cs" />
     <Compile Include="Identity\Validators\MyCustomUserValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

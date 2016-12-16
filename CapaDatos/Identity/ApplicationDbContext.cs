@@ -6,7 +6,7 @@ namespace CapaDatos.Identity
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext() :base ("BusinessViewConnection", throwIfV1Schema: false)
+        public ApplicationDbContext() :base ("BusinessViewConnection")
         {
             Configuration.ProxyCreationEnabled = false;
             Configuration.LazyLoadingEnabled = false;
